@@ -7,9 +7,9 @@ configuration projectAppC
 
 implementation
 {
+   components UserButton;
    components projectC as App;
    components MainC,LedsC;
-   components UserButtonC;
    components new TimerMilliC() as Timer0;
    components ActiveMessageC;
    components new AMSenderC(AM_BLINKTORADIO);
@@ -17,8 +17,6 @@ implementation
 
    App.Boot -> MainC;
    App.Leds -> LedsC;
-   App.Get -> UserButtonC;
-   App.Notify -> UserButtonC;
    App.Timer0 -> Timer0;
    App.Packet -> AMSenderC;
    App.AMPacket -> AMSenderC;
