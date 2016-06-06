@@ -1,6 +1,6 @@
 Authors/Contact: 
-Sandros 	Michail 	sandros@ceid.upatras.gr
-Sotiropoulou 	Eustathia 	sotiropoulou@ceid.upatras.gr
+Sandros 	Michail
+Sotiropoulou 	Eustathia
 
 Description:
 
