@@ -33,7 +33,7 @@ implementation
    {
        call Leds.led0Off();
        call Leds.led2Off();    
-       if(!busy)
+       if(!busy && flag == 0)
        {   
            Msg* rpkt = (Msg*)(call Packet.getPayload(&pkt,sizeof(Msg)));
 	   if(rpkt == NULL)
