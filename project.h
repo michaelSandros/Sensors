@@ -7,10 +7,10 @@ enum
    TIMER_PERIOD_MILLI = 250
 };
 
-typedef nx_struct BlinkToRadioMsg
+typedef nx_struct Msg
 {
    nx_uint16_t nodeid;
    nx_uint16_t counter;
-}BlinkToRadioMsg;
+}Msg;
 
 #endif
