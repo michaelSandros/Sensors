@@ -41,7 +41,7 @@ implementation
 	       return;
            }
            rpkt -> nodeid = TOS_NODE_ID;
-           rpkt -> counter = counter;
+           rpkt -> counter = flag;
            if(call AMSend.send(AM_BROADCAST_ADDR,&pkt,sizeof(Msg)) ==  SUCCESS)
            {
                busy =  TRUE;
@@ -97,9 +97,9 @@ implementation
    {
        if (len == sizeof(Msg))
        {
-	   if(flag == 0)
-           {
-               Msg* Rpkt = (Msg*)payload;
+           Msg* Rpkt = (Msg*)payload;
+	   if(Rpkt -> counter == 0)
+           {   
 	       call Leds.led0On();
 	       call Leds.led2On();
                // Per 1 second
