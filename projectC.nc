@@ -73,7 +73,7 @@ implementation
 			/** increment flag to 1 */
 			flag++;
 			/** start the timer for one time. The timer will start in 1sec */
-            call Timer0.startOneShot(1024);
+            		call Timer0.startOneShot(1024);
 		}
 		/** When the user button is pressed  and the flag is 0 */
 		else if(state == BUTTON_PRESSED && flag == 1)
