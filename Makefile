@@ -1,6 +1,6 @@
 # The top-level application component is BlinkToRadioAppC
 COMPONENT=projectAppC
-#Energy of the antenna
+# Energy of the antenna
 CFLAGS += -DCC2420_DEF_RFPOWER=31
 # Loads in the TinyOS build system
 include $(MAKERULES)
