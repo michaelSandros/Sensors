@@ -4,7 +4,7 @@
 /** for constants */
 enum
 {
-	AM_BLINKTORADIO = 6,
+	AM_BLINKTORADIO = 6
 };
 
 /** Message format to send data over the radio */
