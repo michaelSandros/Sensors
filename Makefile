@@ -2,5 +2,5 @@
 COMPONENT=projectAppC
 # Energy of the antenna
 CFLAGS += -DCC2420_DEF_RFPOWER=31
-# Loads in the TinyOS build system
+# Loads the TinyOS build system
 include $(MAKERULES)
